@@ -13,6 +13,7 @@
 		B21F4CA014B960F50026D9EE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B21F4C9E14B960F50026D9EE /* Credits.rtf */; };
 		B21F4CA314B960F50026D9EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21F4CA214B960F50026D9EE /* AppDelegate.m */; };
 		B21F4CA614B960F60026D9EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B21F4CA414B960F60026D9EE /* MainMenu.xib */; };
+		B231BC7B14BAA36D00445726 /* crap.scpt in Resources */ = {isa = PBXBuildFile; fileRef = B231BC7A14BAA36D00445726 /* crap.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +22,15 @@
 		B21F4C9214B960F50026D9EE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B21F4C9314B960F50026D9EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B21F4C9414B960F50026D9EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B21F4C9714B960F50026D9EE /* Simon-Info.plist */ = {isa = PBXFileReference; path = "Simon-Info.plist"; sourceTree = "<group>"; };
+		B21F4C9714B960F50026D9EE /* Simon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simon-Info.plist"; sourceTree = "<group>"; };
 		B21F4C9914B960F50026D9EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B21F4C9B14B960F50026D9EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B21F4C9D14B960F50026D9EE /* Simon-Prefix.pch */ = {isa = PBXFileReference; path = "Simon-Prefix.pch"; sourceTree = "<group>"; };
+		B21F4C9D14B960F50026D9EE /* Simon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simon-Prefix.pch"; sourceTree = "<group>"; };
 		B21F4C9F14B960F50026D9EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		B21F4CA114B960F50026D9EE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B21F4CA114B960F50026D9EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B21F4CA214B960F50026D9EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B21F4CA514B960F60026D9EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B231BC7A14BAA36D00445726 /* crap.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = crap.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		B21F4C8014B960F50026D9EE = {
 			isa = PBXGroup;
 			children = (
+				B231BC7A14BAA36D00445726 /* crap.scpt */,
 				B21F4C9514B960F50026D9EE /* Simon */,
 				B21F4C8E14B960F50026D9EE /* Frameworks */,
 				B21F4C8C14B960F50026D9EE /* Products */,
@@ -155,6 +158,7 @@
 				B21F4C9A14B960F50026D9EE /* InfoPlist.strings in Resources */,
 				B21F4CA014B960F50026D9EE /* Credits.rtf in Resources */,
 				B21F4CA614B960F60026D9EE /* MainMenu.xib in Resources */,
+				B231BC7B14BAA36D00445726 /* crap.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				B21F4CAB14B960F60026D9EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

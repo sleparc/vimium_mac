@@ -12,4 +12,8 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+@property (retain) NSMenu       *theMenu;
+@property (retain) NSStatusItem *theItem;
+@property (retain) NSMenuItem   *showHubotMenuItem;
+
 @end
