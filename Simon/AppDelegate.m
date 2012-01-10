@@ -13,8 +13,10 @@
 
 @synthesize window = _window,
             theMenu,
-            theItem,
-            showHubotMenuItem;
+            statusItem,
+            showHubotMenuItem,
+            statusImage,
+            statusHighlightImage;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -25,11 +27,22 @@
                                                    action:NULL 
                                             keyEquivalent:@""];
     [theMenu addItem:showHubotMenuItem];   
-    theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    [theItem setTitle:@"Hubot"];
-    [theItem setHighlightMode:YES];
-    [theItem setMenu:theMenu];
+    statusItem = [bar statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setHighlightMode:YES];
+    [statusItem setMenu:theMenu];
     
+    //Used to detect where our files are
+	NSBundle *bundle = [NSBundle mainBundle];
+	
+	//Allocates and loads the images into the application which will be used for our NSStatusItem
+	statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
+	statusHighlightImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon-alt" ofType:@"png"]];
+
+    //Sets the images in our NSStatusItem
+	[statusItem setImage:statusImage];
+	[statusItem setAlternateImage:statusHighlightImage];
+
+
 //    NSString *scriptPath = [[NSBundle mainBundle] pathForResource:@"crap" 
 //                                                           ofType:@"scpt"];
 //    NSLog(@"PATH: %@", scriptPath);
